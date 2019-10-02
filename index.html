@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
+<html>
 <head>
-	<title>Catan Randomizer</title>
+	<title>Catan 10 player Randomizer</title>
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">  
 	<script src="jquery.min.js" type="text/javascript"></script>
 	<script type="text/javascript" language="javascript">
@@ -16,27 +17,73 @@
 	<div id="content-wrapper">
 		<div id="content-left">
 		
-			<h1 id="title">Catan Map Generator</h1>
-			<h4>By <a href="http://www.jaredkirschner.com">Jared Kirschner</a></h4>
+			<h1 id="title">Catan More than 6 Players Map Generator</h1>
+			<h4>By Pravalika Routhu</h4>
 			
 			<div id="gen-options">
 				<div>
 					<span><b>Please select game type:</b></span><br>
 					<input type="radio" name="game-type" value="normal" checked>Normal (1-4 players)<br>
-					<input type="radio" name="game-type" value="expanded">Expansion (5-6 players)<br>
+					<input type="radio" name="game-type" value="expanded">5-6 Player Expansion (5-6 players)<br>
+					<input type="radio" name="game-type" value="crazyExpansion">10 Player Expansion (7-10 players)<br>
+					<input type="radio" name="game-type" value="evenCrazyExpansion">12 Player Expansion (11-12 players)<br>
 				</div>
 			</div>
 			
 			<button id="gen-map-button" type="button" disabled="true">
 				Loading resources...
 			</button>
-		
-		</div>
+		    <h3> Game rules for more than 6 players (7-10 player version) </h3>
+		    <h4> Number of players we played with</h4>
+			<p> We played Catan Cities and Knights with 7 people and tried out the 7-10 player board. </p>
+			<h4> What do you need to play this game? </h4>
+			<p>
+      We used <i> <strong>two</strong> <a target="_blank" href="https://www.amazon.com/gp/product/B00U26V4VQ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00U26V4VQ&linkCode=as2&tag=boardgameexplorer-20&linkId=f7de0b42f275e5eabca41a090970fd32">Catan Base Game</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B00U26V4VQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, 
+  <strong>one</strong> <a target="_blank" href="https://www.amazon.com/gp/product/B00U26V9CU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00U26V9CU&linkCode=as2&tag=boardgameexplorer-20&linkId=fc8837fee8ccbefbac9d80d28bd83830">Catan Extension: 5-6 Player</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B00U26V9CU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, 
+  <strong>one</strong> <a target="_blank" href="https://www.amazon.com/gp/product/B00U26V9F2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00U26V9F2&linkCode=as2&tag=boardgameexplorer-20&linkId=dfa9f3e0c6e17bea0281e2e4ad5d9978">Catan Expansion: Cities &amp; Knights</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B00U26V9F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
+  and <strong>one</strong> <a target="_blank" href="https://www.amazon.com/gp/product/B00U26V4Q6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00U26V4Q6&linkCode=as2&tag=boardgameexplorer-20&linkId=99e97b153b047d488627cf7b7ced9fe8">Catan Extension: Cities &amp; Knights 5-6 Player</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B00U26V4Q6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></i> 
+  (You probably need <strong>two</strong> catan cities and knights too but made our own knights and city improvement booklet.
+  Since the player pieces are all made of the same color, we colored the other player pieces and also created a make shift knights and used <a target="_blank" href="https://www.amazon.com/gp/product/B00001QHVP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00001QHVP&linkCode=as2&tag=boardgameexplorer-20&linkId=44aeece3326c8f0d81f57abd02779f41">Playing Cards</a>
+  <img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B00001QHVP" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> for City Improvements. We used <a target="_blank" href="https://www.amazon.com/gp/product/B01LX0UJBN/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01LX0UJBN&linkCode=as2&tag=boardgameexplorer-20&linkId=b4bc52359b54d84c0973711ccc232927">Colored Paper</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=boardgameexplorer-20&l=am2&o=1&a=B01LX0UJBN" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
+  for creating make shift city walls for the additional player(s).
+			</p>
+            <h4> Game Rules: </h4>
+			<p>
+			<ol>
+			<li> We had two robbers on the board at all times. When the dice rolls to 7, only one of the robbers can be removed and placed on any hex.
+			There are a couple of sub rules to keep in mind: 
+			<ul>
+			  <li> You cannot place the robber on a hex of a player, whose other hex already contains a robber. 
+			  At any point in time, a single player will only have a single/no hex of his/her blocked by a robber. </li>
+			  <li> If a player has one of his hex blocked by a robber, then the same player, even though he/she shares the hex
+			  with other players, should not have their hex blocked </li>
+			  <li> There were times where a single person's hex was always blocked and this could lead to some frustration.
+			   The game can be made more interesting by removing two robbers and placing them on two different hexes for a roll of 7</li> 
+			</ul>
+			</li> 
+			<li>
+			<em>Most Important Rule: </em>
+			We set a hard limit of 3 minutes for each turn.  The timer starts once the roll is complete and all the players
+			receive his/her resource cards 
+			</li>
+			<li>
+			</li>
+			<li>
+			</li>
+			</ol>
+			</p>
+			<p> P.S. - Please do not try this version of the game if you don't have 
+			atleast 8 people to play.</p>
+			<p><small>Credit to Jared Kirschner for the main codebase. Forked from this <a href="http://jkirschner.github.io/catan-randomizer/">repo</a></small></p>
+			</div>
 		<div id="content-right">
 			<div id="map-container">
 			</div>
 		</div>
-	</div>
+		
+		
+        	
+</div>
 </body>
 
 </html>

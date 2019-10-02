@@ -607,3 +607,4 @@ CanvasRenderingContext2D.prototype.clear =
       this.restore();
     }           
 };
+
